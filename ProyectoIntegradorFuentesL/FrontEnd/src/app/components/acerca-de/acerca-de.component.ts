@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { persona } from 'src/app/model/persona.model';
 
 @Component({
   selector: 'app-acerca-de',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-
+  persona: persona = new persona("","","");
   constructor() { }
 
   ngOnInit(): void {
